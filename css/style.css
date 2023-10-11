@@ -1,0 +1,25 @@
+/* IMPORT _VARS.SCSS */
+/* _VARIABLES */
+:root {
+  --Mystic-color: #CFDBD5;
+  --SugarCane-color: #E8EDDF;
+  --EnergyYellow-color: #F5CB5C;
+  --Maire-color: #242423;
+  --Oil-color: #333533;
+  --BgDarkGradient: linear-gradient(to bottom, var(--Oil-color),var(--Maire-color));
+}
+
+/* IMPORT _BODY.SCSS */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  /* display: flex; */
+  min-height: 100vh;
+  background: var(--BgDarkGradient);
+}/*# sourceMappingURL=style.css.map */
