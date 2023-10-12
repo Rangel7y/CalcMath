@@ -4,3 +4,9 @@
 
 /* IMPORT _BODY.SCSS */
 @use 'components/core/body';
+
+/* IMPORT _HEADER.SCSS */
+@use 'components/hdr';
+
+/* IMPORT _MAIN.SCSS */
+@use 'components/core/main';
