@@ -1,3 +1,5 @@
+/* IMPORT TENA FONT FAMILY */
+@import url('https://fonts.cdnfonts.com/css/tena');
 
 /* RESET */
 *{
@@ -8,7 +10,8 @@
 
 /* BODY */
 body{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
 
     min-height: 100vh;
 
