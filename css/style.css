@@ -1,4 +1,6 @@
 /* IMPORT _VARS.SCSS */
+/* IMPORT TENA FONT FAMILY */
+@import url("https://fonts.cdnfonts.com/css/tena");
 /* _VARIABLES */
 :root {
   --Mystic-color: #CFDBD5;
@@ -19,7 +21,53 @@
 
 /* BODY */
 body {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: var(--BgDarkGradient);
+}
+
+/* IMPORT _HEADER.SCSS */
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: var(--Maire-color);
+  position: relative;
+}
+header h1 {
+  color: var(--SugarCane-color);
+  font-family: "Tena", sans-serif;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 50px;
+  background-color: var(--Oil-color);
+  border-radius: 8px;
+  /* opacity: 0.9; */
+  position: absolute;
+  top: 54px;
+}
+header img {
+  margin-bottom: 5px;
+  width: 50px;
+}
+
+/* IMPORT _MAIN.SCSS */
+/* MAIN */
+#main-ctn {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid yellow; */
 }/*# sourceMappingURL=style.css.map */
