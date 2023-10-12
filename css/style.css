@@ -1,6 +1,8 @@
 /* IMPORT _VARS.SCSS */
-/* IMPORT TENA FONT FAMILY */
+/* IMPORT Tena Font Family */
 @import url("https://fonts.cdnfonts.com/css/tena");
+/* IMPORT Fh Space Font Family */
+@import url("https://fonts.cdnfonts.com/css/fh-space");
 /* _VARIABLES */
 :root {
   --Mystic-color: #CFDBD5;
