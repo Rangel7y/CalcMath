@@ -1,0 +1,29 @@
+
+/* CALCMATH-CONTAINER */
+#calcmath-ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 8px 16px;
+
+    border: 2px solid var(--Maire-color);
+    border-radius: 10px;
+
+    width: 400px;
+    height: 500px;
+}
+
+.calcmath-pnl{
+    display: flex;
+    align-items: center;
+
+    .top{
+        border: 1px solid red;
+
+        width: 50px;
+        height: 50px;
+    }
+}
+
