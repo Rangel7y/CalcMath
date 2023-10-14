@@ -54,7 +54,20 @@
             color: var(--SugarCane-color);
 
             font-size: 20px;
+            font-weight: 700;
             font-family: 'Fh-space', sans-serif;
+
+            border: 1px solid var(--Maire-color);
+
+            cursor: pointer;
+
+            transition: all 150ms ease, backgroud 200ms ease-in-out;
+
+            &:hover{
+                background-color: var(--Oil-color);
+
+                opacity: 0.7;
+            }
         }
     }
 }
