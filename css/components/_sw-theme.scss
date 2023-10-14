@@ -8,7 +8,7 @@
 
     border: 2px solid var(--Maire-color);
 
-    border-radius: 10px;
+    border-radius: 7px;
 
     transition: 300ms;
 
@@ -22,5 +22,7 @@
 
         background: none;
         border: none;
+
+        cursor: pointer;
     }
 }
