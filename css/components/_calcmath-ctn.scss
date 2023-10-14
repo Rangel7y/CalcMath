@@ -43,15 +43,18 @@
     tr{
         display: flex;
 
-        width: 100%;
-
         td{
             display: flex;
             align-items: center;
             justify-content: center;
 
-            width: 80px;
+            width: 100px;
             height: 80px;
+
+            color: var(--SugarCane-color);
+
+            font-size: 20px;
+            font-family: 'Fh-space', sans-serif;
         }
     }
 }
