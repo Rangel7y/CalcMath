@@ -135,12 +135,14 @@ header img {
 }
 #calcmath-table tr {
   display: flex;
-  width: 100%;
 }
 #calcmath-table tr td {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
+  width: 100px;
   height: 80px;
+  color: var(--SugarCane-color);
+  font-size: 20px;
+  font-family: "Fh-space", sans-serif;
 }/*# sourceMappingURL=style.css.map */
