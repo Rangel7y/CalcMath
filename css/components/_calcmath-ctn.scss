@@ -16,23 +16,46 @@
 
 }
 
+/* CALCMATH-PANEL */
 .calcmath-pnl{
     display: flex;
     align-items: center;
 }
-
 .top{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
     width: 100%;
     height: 200px;
 
     background-color: var(--Maire-color);
-}
 
+    span{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        width: 350px;
+        height: 50px;
+
+        padding-right: 15px;
+
+        p{
+            font-size: 45px;
+            font-weight: 700;
+            font-family: 'Fh-space', sans-serif;
+
+            color: var(--SugarCane-color);
+        }
+    }
+}
 .down{
     width: 100%;
     height: 100%;
 }
 
+/* CALCMATH-TABLE */
 #calcmath-table{
     display: flex;
     align-items: center;
