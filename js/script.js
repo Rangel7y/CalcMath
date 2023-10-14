@@ -1,20 +1,20 @@
 /* GET TEXT RESULT */
 const calcMathResult = document.getElementById('calcmath-result');
 
-var getCurrentNumber = calcMathResult.innerText;
-
 /* FUNCTION TO INSERT NUMBER ON TEXT RESULT */
 const insertNumber = (newNumber) => {
 
-    if(getCurrentNumber.length > 14){
+    let currentNumber = getCurrentNumber();
+
+    if(currentNumber.length > 14){
         return;
     }
 
-    if(getCurrentNumber === "0"){
-        getCurrentNumber = "";
+    if(currentNumber === "0"){
+        currentNumber = "";
     }
 
-    calcMathResult.innerText = getCurrentNumber + newNumber;
+    calcMathResult.innerText = currentNumber + newNumber;
 }
 
 /* FUNCTION TO CLEAN NUMBERS */
@@ -22,7 +22,14 @@ const clearNumbers = () => calcMathResult.innerText = "0";
 
 /* FUNCTION TO BACK NUMBER */
 const backNumber = () => {
-    if(getCurrentNumber.length <= 1) return;
+    let currentNumber = getCurrentNumber();
 
-    calcMathResult.innerText = getCurrentNumber.substring(0, calcMathResult.length -1);
+    if(currentNumber.length <= 1) return calcMathResult.innerText = "0";
+
+    calcMathResult.innerText = currentNumber.substring(0, currentNumber.length -1);
+}
+
+function getCurrentNumber(){
+    let currentNumber = calcMathResult.innerText;
+    return currentNumber;
 }
