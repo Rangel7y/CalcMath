@@ -29,6 +29,7 @@ const backNumber = () => {
     calcMathResult.innerText = currentNumber.substring(0, currentNumber.length -1);
 }
 
+/* FUNCTION TO GET CURRENT NUMBER ON TEXT RESULT */
 function getCurrentNumber(){
     let currentNumber = calcMathResult.innerText;
     return currentNumber;
