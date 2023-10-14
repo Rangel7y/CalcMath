@@ -6,7 +6,7 @@
 
     <link rel="shortcut icon" href="./assets/calculator-favicon.png" type="image/x-icon">
 
-    <script src="./js/script.js"></script>
+    <script defer src="./js/script.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -35,36 +35,35 @@
             <section class="calcmath-pnl down">
                 <table id="calcmath-table">
                     <tr>
-                        <td>C</td>
-                        <td><</td>
+                        <td onclick="clearNumbers()">C</td>
+                        <td onclick="backNumber()"><</td>
                         <td>%</td>
                         <td>÷</td>
                     </tr>
 
                     <tr>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
+                        <td onclick="insertNumber(7)">7</td>
+                        <td onclick="insertNumber(8)">8</td>
+                        <td onclick="insertNumber(9)">9</td>
                         <td>*</td>
                     </tr>
 
                     <tr>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
+                        <td onclick="insertNumber(4)">4</td>
+                        <td onclick="insertNumber(5)">5</td>
+                        <td onclick="insertNumber(6)">6</td>
                         <td>-</td>
                     </tr>
 
-                    
                     <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
+                        <td onclick="insertNumber(1)">1</td>
+                        <td onclick="insertNumber(2)">2</td>
+                        <td onclick="insertNumber(3)">3</td>
                         <td>+</td>
                     </tr>
 
                     <tr>
-                        <td>0</td>
+                        <td onclick="insertNumber(0)">0</td>
                         <td>.</td>
                         <td style="width: 200px; font-size: 30px;">=</td>
                     </tr>
