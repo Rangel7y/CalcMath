@@ -3,7 +3,7 @@ const calcMathResult = document.getElementById('calcmath-result');
 
 const textsAllowed = [
     '%',
-    '÷',
+    '/',
     '*',
     '-',
     '+',
@@ -21,7 +21,7 @@ const textsAllowed = [
 ];
 
 /* FUNCTION TO INSERT NUMBER ON TEXT RESULT */
-const insertNumber = (newNumber) => {
+const insert = (newNumber) => {
 
     let currentNumber = getCurrentNumber();
 
@@ -44,21 +44,6 @@ const backNumber = () => {
     if(getCurrentNumber().length <= 1) return calcMathResult.innerText = "0";
 
     calcMathResult.innerText = getCurrentNumber().substring(0, getCurrentNumber().length -1);
-}
-
-/* FUNCTION TO APPLY PORCENT */
-const applyPorcent = () =>{
-
-}
-
-/* FUNCTION TO DIVIDE NUMBER */
-const divideNumber = () =>{
-
-}
-
-/* FUNCTION TO MULTIPLY NUMBER */
-const multiplyNumber = () =>{
-    calcMathResult.innerText = getCurrentNumber() + "*";
 }
 
 /* FUNCTION TO  */
