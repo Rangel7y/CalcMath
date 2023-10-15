@@ -35,36 +35,36 @@
             <section class="calcmath-pnl down">
                 <table id="calcmath-table">
                     <tr>
-                        <td onclick="clearNumbers()">C</td>
-                        <td onclick="backNumber()"><</td>
-                        <td onclick="applyPorcent()">%</td>
-                        <td onclick="divideNumber()">÷</td>
+                        <td onclick="clearNumbers('')">C</td>
+                        <td onclick="backNumber('')"><</td>
+                        <td onclick="insert('%')">%</td>
+                        <td onclick="insert('/')">÷</td>
                     </tr>
 
                     <tr>
-                        <td onclick="insertNumber(7)">7</td>
-                        <td onclick="insertNumber(8)">8</td>
-                        <td onclick="insertNumber(9)">9</td>
-                        <td onclick="multiplyNumber()">*</td>
+                        <td onclick="insert('7')">7</td>
+                        <td onclick="insert('8')">8</td>
+                        <td onclick="insert('9')">9</td>
+                        <td onclick="insert('*')">*</td>
                     </tr>
 
                     <tr>
-                        <td onclick="insertNumber(4)">4</td>
-                        <td onclick="insertNumber(5)">5</td>
-                        <td onclick="insertNumber(6)">6</td>
-                        <td onclick="">-</td>
+                        <td onclick="insert('4')">4</td>
+                        <td onclick="insert('5')">5</td>
+                        <td onclick="insert('6')">6</td>
+                        <td onclick="insert('-')">-</td>
                     </tr>
 
                     <tr>
-                        <td onclick="insertNumber(1)">1</td>
-                        <td onclick="insertNumber(2)">2</td>
-                        <td onclick="insertNumber(3)">3</td>
-                        <td onclick="">+</td>
+                        <td onclick="insert('1')">1</td>
+                        <td onclick="insert('2')">2</td>
+                        <td onclick="insert('3')">3</td>
+                        <td onclick="insert('+')">+</td>
                     </tr>
 
                     <tr>
-                        <td onclick="insertNumber(0)">0</td>
-                        <td onclick="">.</td>
+                        <td onclick="insert('0')">0</td>
+                        <td onclick="insert('.')">.</td>
                         <td onclick="calculateNumbers()" style="width: 200px; font-size: 30px;">=</td>
                     </tr>
                 </table>
