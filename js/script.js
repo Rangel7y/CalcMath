@@ -28,7 +28,7 @@ const textAcent = [
     '*',
     '-',
     '+',
-    '.',
+    '.'
 ];
 
 /* VARIABLE TO RESET WHEN CONSULTED RESULT */
@@ -61,7 +61,7 @@ const insert = (newNumber) => {
             let hasReplaced = false;
     
             for (let n = 0; n < textAcent.length; n++) {
-                if (currentNumber.includes(textAcent[n]) && textAcent[n] !== newNumber) {
+                if (currentNumber.includes(textAcent[n]) && textAcent[n] !== newNumber && textAcent[n] !== ".") {
                     currentNumber = currentNumber.replace(textAcent[n], newNumber);
                     hasReplaced = true;
                     console.log(currentNumber);
