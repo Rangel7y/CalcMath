@@ -1,0 +1,19 @@
+
+/* RESPONSIVE PAGE */
+/* cellphone 400px*/
+@media (max-width: 400px){
+
+    #calcmath-ctn{
+        width: 360px;
+    }
+
+    #calcmath-table{
+        tr{
+            width: 360px; 
+            
+            /* td{
+                height: 55px;
+            } */
+        }
+    }
+}

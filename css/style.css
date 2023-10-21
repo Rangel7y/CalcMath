@@ -21,11 +21,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 /* BODY */
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background: var(--BgDarkGradient);
 }
 
@@ -94,20 +98,18 @@ header img {
 .calcmath-pnl {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .top {
-  display: flex;
-  align-items: center;
   justify-content: end;
-  width: 100%;
-  height: 200px;
+  height: 20%;
   background-color: var(--Maire-color);
 }
 .top span {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   width: 350px;
   height: 50px;
   padding-right: 15px;
@@ -120,35 +122,52 @@ header img {
 }
 
 .down {
-  width: 100%;
-  height: 100%;
+  justify-content: center;
+  height: 80%;
 }
 
 /* CALCMATH-TABLE */
 #calcmath-table {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  height: 100%;
 }
 #calcmath-table tr {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
 }
 #calcmath-table tr td {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  flex: 1;
   height: 80px;
   color: var(--SugarCane-color);
   font-size: 20px;
   font-weight: 700;
   font-family: "Fh-space", sans-serif;
   border: 1px solid var(--Maire-color);
+  border-radius: 10px;
   cursor: pointer;
   transition: all 150ms ease, backgroud 200ms ease-in-out;
 }
 #calcmath-table tr td:hover {
   background-color: var(--Oil-color);
   opacity: 0.7;
+}
+
+/* IMPORT _RESPONSE.SCSS */
+/* RESPONSIVE PAGE */
+/* cellphone 400px*/
+@media (max-width: 400px) {
+  #calcmath-ctn {
+    width: 360px;
+  }
+  #calcmath-table tr {
+    width: 360px;
+    /* td{
+        height: 55px;
+    } */
+  }
 }/*# sourceMappingURL=style.css.map */
